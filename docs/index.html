@@ -18,7 +18,7 @@
             background-color: #fcecce;
             font-family: 'Cabin', sans-serif;
             color: #214332;
-            font-size: 20px; /* Kích thước chữ cơ bản, dễ đọc trên điện thoại */
+            font-size: 20px;
             line-height: 1.5;
             margin: 0;
             padding: 20px;
@@ -28,8 +28,19 @@
 
         /* Khung chứa nội dung để giới hạn chiều rộng trên màn hình lớn */
         .container {
-            max-width: 600px;
+            max-width: 1600px;
             width: 100%;
+        }
+
+        article {
+            display: flex;
+            gap: 3em;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        section {
+            width: 45%;
         }
 
         /* Tùy chỉnh cho Tiêu đề (Headings) */
@@ -72,8 +83,9 @@
             margin-top: 15px;
         }
 
-        /* Media query tối ưu thêm khi xem trên các màn hình điện thoại rất nhỏ */
-        @media (max-width: 400px) {
+
+
+        @media (max-width: 769px) {
             body {
                 font-size: 18px;
                 padding: 15px;
@@ -84,95 +96,116 @@
             h2 {
                 font-size: 22px;
             }
+            section {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Những Phận Sự Cần Làm Trước Khi Hành Thiền</h1>
+    <main class="container">
+        <header>
+            <h1>Những Phận Sự Cần Làm Trước Khi Hành Thiền</h1>
+        </header>
+        <article>
+        <section class="section">
+        
+            <h2>Đảnh Lễ Tam Bảo</h2>
+            <p>Con đem hết lòng thành kính đảnh lễ Đức Phật Bảo</p>
+            <p>Con đem hết lòng thành kính đảnh lễ Đức Pháp Bảo</p>
+            <p class="section-end">Con đem hết lòng thành kính đảnh lễ Đức Tăng Bảo</p>
 
-        <h2>Đảnh Lễ Tam Bảo</h2>
-        <p>Con đem hết lòng thành kính đảnh lễ Đức Phật Bảo</p>
-        <p>Con đem hết lòng thành kính đảnh lễ Đức Pháp Bảo</p>
-        <p class="section-end">Con đem hết lòng thành kính đảnh lễ Đức Tăng Bảo</p>
+            <h2>Sám Hối</h2>
+            <p>Từ vô thủy luân hồi cho đến tận giây phút này, thông qua thân, khẩu, ý – 3 cửa này,</p>
+            <p>Nếu con có phạm phải bất kì lỗi lầm nào, dù vô tình hay cố ý,</p>
+            <p>đến Đức Phật Bảo Cao Thượng, Đức Pháp Bảo Cao Thượng, Đức Tăng Bảo Cao Thượng,</p>
+            <p>cũng như đối với các chư Phật, chư Phật Độc Giác, và các bậc A-la-hán, cùng tất cả các bậc Thánh và các bậc Thầy Tổ đáng kính,</p>
+            <p>Con nguyện cúi xin các Ngài từ bi xá tội lỗi ấy cho con.</p>
+            <p class="section-end">Con xin được tha thứ lần thứ nhì. Con xin được tha thứ lần thứ ba.</p>
 
-        <h2>Sám Hối</h2>
-        <p>Từ vô thủy luân hồi cho đến tận giây phút này, thông qua thân, khẩu, ý – 3 cửa này,</p>
-        <p>Nếu con có phạm phải bất kì lỗi lầm nào, dù vô tình hay cố ý,</p>
-        <p>đến Đức Phật Bảo Cao Thượng, Đức Pháp Bảo Cao Thượng, Đức Tăng Bảo Cao Thượng,</p>
-        <p>cũng như đối với các chư Phật, chư Phật Độc Giác, và các bậc A-la-hán, cùng tất cả các bậc Thánh và các bậc Thầy Tổ đáng kính,</p>
-        <p>Con nguyện cúi xin các Ngài từ bi xá tội lỗi ấy cho con.</p>
-        <p class="section-end">Con xin được tha thứ lần thứ nhì. Con xin được tha thứ lần thứ ba.</p>
+            <h2>Cúng Dường Thân Mạng</h2>
+            <p>Con xin cúng dường thân mạng này đến Đức Phật Bảo cao thượng.</p>
+            <p>Nguyện cho điều này được thành tựu.</p>
+            <p>Con xin cúng dường thân mạng này đến Đức Pháp Bảo cao thượng.</p>
+            <p>Nguyện cho điều này được thành tựu.</p>
+            <p>Con xin cúng dường thân mạng này đến Đức Tăng Bảo cao thượng.</p>
+            <p class="section-end">Nguyện cho điều này được thành tựu.</p>
 
-        <h2>Cúng Dường Thân Mạng</h2>
-        <p>Con xin cúng dường thân mạng này đến Đức Phật Bảo cao thượng.</p>
-        <p>Nguyện cho điều này được thành tựu.</p>
-        <p>Con xin cúng dường thân mạng này đến Đức Pháp Bảo cao thượng.</p>
-        <p>Nguyện cho điều này được thành tựu.</p>
-        <p>Con xin cúng dường thân mạng này đến Đức Tăng Bảo cao thượng.</p>
-        <p class="section-end">Nguyện cho điều này được thành tựu.</p>
+            <h2>Chia Phước</h2>
+            <p>Từ vô thủy luân hồi cho đến tận giây phút này</p>
+            <p>Với tất cả những phước báu mà con đã có được,</p>
+            <p>Bao gồm những phước báu có được từ việc cung kính đảnh lễ Tam Bảo,</p>
+            <p>Và phước báu cao thượng từ việc cúng dường thân mạng này,</p>
+            <p>Nguyện cho các bậc Thầy Tổ đáng kính của con được tùy hỷ với phần phước báu này</p>
+            <p class="section-end">Nguyện cho các vị Chư Thiên, Phạm Thiên, các vị Long Vương, các chúng sanh, cũng như các thân bằng quyến thuộc của con, được tùy hỷ với phần phước báu này.</p>
 
-        <h2>Chia Phước</h2>
-        <p>Từ vô thủy luân hồi cho đến tận giây phút này</p>
-        <p>Với tất cả những phước báu mà con đã có được,</p>
-        <p>Bao gồm những phước báu có được từ việc cung kính đảnh lễ Tam Bảo,</p>
-        <p>Và phước báu cao thượng từ việc cúng dường thân mạng này,</p>
-        <p>Nguyện cho các bậc Thầy Tổ đáng kính của con được tùy hỷ với phần phước báu này</p>
-        <p class="section-end">Nguyện cho các vị Chư Thiên, Phạm Thiên, các vị Long Vương, các chúng sanh, cũng như các thân bằng quyến thuộc của con, được tùy hỷ với phần phước báu này.</p>
+            <h2>Tùy Hỷ Công Đức</h2>
+            <p>Với bất kể những công đức nào đã được tích lũy bởi chư Phật,</p>
+            <p>chư Phật Độc Giác, các bậc A-la-hán, các bậc Thánh,</p>
+            <p>và tất cả các vị Bồ-tát</p>
+            <p class="section-end">Con xin được tùy hỷ với tất cả những công đức ấy.</p>
 
-        <h2>Tùy Hỷ Công Đức</h2>
-        <p>Với bất kể những công đức nào đã được tích lũy bởi chư Phật,</p>
-        <p>chư Phật Độc Giác, các bậc A-la-hán, các bậc Thánh,</p>
-        <p>và tất cả các vị Bồ-tát</p>
-        <p class="section-end">Con xin được tùy hỷ với tất cả những công đức ấy.</p>
+            <h2>Quán Chiếu Về Giới Hạnh (Sīla)</h2>
+            <p>Những Giới hạnh con đã thọ trì cho mục đích đạt đến niềm an lạc tịnh tĩnh Niết-bàn,</p>
+            <p>được các bậc trí tán thán, không bị đứt đoạn ở chặng đầu, chặng giữa, hay chặng cuối.</p>
+            <p>Giới hạnh của con là thanh tịnh.</p>
+            <p>Giới hạnh của con là thanh tịnh. Giới hạnh của con là thanh tịnh.</p>
+            <p class="note section-end">(Nếu có giới hạnh nào được nhớ là đã bị phạm, thì nên sám hối, thọ trì và quán chiếu lại)</p>
 
-        <h2>Quán Chiếu Về Giới Hạnh (Sīla)</h2>
-        <p>Những Giới hạnh con đã thọ trì cho mục đích đạt đến niềm an lạc tịnh tĩnh Niết-bàn,</p>
-        <p>được các bậc trí tán thán, không bị đứt đoạn ở chặng đầu, chặng giữa, hay chặng cuối.</p>
-        <p>Giới hạnh của con là thanh tịnh.</p>
-        <p>Giới hạnh của con là thanh tịnh. Giới hạnh của con là thanh tịnh.</p>
-        <p class="note section-end">(Nếu có giới hạnh nào được nhớ là đã bị phạm, thì nên sám hối, thọ trì và quán chiếu lại)</p>
+            <h2>Phát Nguyện Ban Đầu (Adhiṭṭhāna)</h2>
+            <p>Trước khi sự già yếu, bệnh tật và cái chết tìm đến, con xin thực hành thiền tập vì lợi lạc của chính mình.</p>
+            <p>Con nguyện thực hành một cách tinh tấn.</p>
+            <p>Để được giải thoát khỏi nỗi khổ lớn lao của sự già, bệnh tật và cái chết, con nguyện kham nhẫn trước những nỗi bất tiện nhỏ này.</p>
+            <p>Vì mục đích đạt đến niềm an lạc tịnh tĩnh của Niết-bàn - nơi dập tắt mọi khổ đau, con sẽ tiếp tục thời thiền này mà không có sự gián đoạn nào.</p>
+            <p>Ngay trên vị trí ngồi thiền này, nguyện cho các triền cái <i>(chướng ngại)</i> bị khuất phục và định tâm được phát sanh.</p>
+            <p class="section-end">Nguyện cho ngọn lửa phiền não được dập tắt, và niềm an lạc tịnh tĩnh của Niết-bàn được chứng ngộ.</p>
 
-        <h2>Phát Nguyện Ban Đầu (Adhiṭṭhāna)</h2>
-        <p>Trước khi sự già yếu, bệnh tật và cái chết tìm đến, con xin thực hành thiền tập vì lợi lạc của chính mình.</p>
-        <p>Con nguyện thực hành một cách tinh tấn.</p>
-        <p>Để được giải thoát khỏi nỗi khổ lớn lao của sự già, bệnh tật và cái chết, con nguyện kham nhẫn trước những nỗi bất tiện nhỏ này.</p>
-        <p>Vì mục đích đạt đến niềm an lạc tịnh tĩnh của Niết-bàn - nơi dập tắt mọi khổ đau, con sẽ tiếp tục thời thiền này mà không có sự gián đoạn nào.</p>
-        <p>Ngay trên vị trí ngồi thiền này, nguyện cho các triền cái <i>(chướng ngại)</i> bị khuất phục và định tâm được phát sanh.</p>
-        <p class="section-end">Nguyện cho ngọn lửa phiền não được dập tắt, và niềm an lạc tịnh tĩnh của Niết-bàn được chứng ngộ.</p>
+            <h2>Niệm Ân Đức Phật (Buddhānussati)</h2>
+            <p>Đức Phật Chánh Biến Tri:</p>
+            <p>Ngài đã hoàn toàn viễn ly mọi phiền não</p>
+            <p>Ngài đã đoạn tận mọi kẻ thù phiền não</p>
+            <p>Ngài đã chấm dứt vòng luân hồi</p>
+            <p>Ngài không hề phạm phải một ác hạnh nào, dù kín đáo</p>
+            <p>Ngài xứng đáng thọ nhận sự cúng dường từ chư Thiên và nhân loại.</p>
+            <p class="section-end">Do đó, Ngài được xưng tụng là bậc Arahaṃ <i>(Ứng Cúng)</i></p>
 
-        <h2>Niệm Ân Đức Phật (Buddhānussati)</h2>
-        <p>Đức Phật Chánh Biến Tri:</p>
-        <p>Ngài đã hoàn toàn viễn ly mọi phiền não</p>
-        <p>Ngài đã đoạn tận mọi kẻ thù phiền não</p>
-        <p>Ngài đã chấm dứt vòng luân hồi</p>
-        <p>Ngài không hề phạm phải một ác hạnh nào, dù kín đáo</p>
-        <p>Ngài xứng đáng thọ nhận sự cúng dường từ chư Thiên và nhân loại.</p>
-        <p class="section-end">Do đó, Ngài được xưng tụng là bậc Arahaṃ <i>(Ứng Cúng)</i></p>
+            <h2>Phát Triển Tâm Từ (Mettā)</h2>
+            <p>Nguyện cho con thoát khỏi những hận thù.</p>
+            <p>Nguyện cho con thoát khỏi sự sân hận.</p>
+            <p>Nguyện cho con thoát khỏi những khổ đau và ưu phiền.</p>
+            <p>Nguyện cho con được sống an vui.</p>
+            <p class="section-end">Cũng như con hằng mong ước, nguyện cho tất cả chúng sinh thoát khỏi những hận thù, thoát khỏi những sân hận, thoát khỏi những khổ đau và ưu phiền, và nguyện cho tất cả đều được sống an vui.</p>
 
-        <h2>Phát Triển Tâm Từ (Mettā)</h2>
-        <p>Nguyện cho con thoát khỏi những hận thù.</p>
-        <p>Nguyện cho con thoát khỏi sự sân hận.</p>
-        <p>Nguyện cho con thoát khỏi những khổ đau và ưu phiền.</p>
-        <p>Nguyện cho con được sống an vui.</p>
-        <p class="section-end">Cũng như con hằng mong ước, nguyện cho tất cả chúng sinh thoát khỏi những hận thù, thoát khỏi những sân hận, thoát khỏi những khổ đau và ưu phiền, và nguyện cho tất cả đều được sống an vui.</p>
+            <h2>Quán Tưởng Về Thân Bất Tịnh (Asubha)</h2>
+            <p>Thân thể này của con vốn không được tạo nên từ vàng bạc, ngọc trai hay châu báu; cũng không được kết thành từ những hương liệu thơm tho như trầm hương.</p>
+            <p>Nó chỉ là sự hợp thành của tóc, lông, móng, răng,</p>
+            <p>cùng ba mươi hai thể trược <i>(phần bất tịnh)</i> — vốn cấu uế và thật chẳng đáng hưởng thụ.</p>
+            <p>Thân thể này là bất tịnh và vô cùng cấu uế.</p>
+            <p>Thân thể này là bất tịnh và vô cùng cấu uế.</p>
+            <p class="section-end">Thân thể này là bất tịnh và vô cùng cấu uế.</p>
 
-        <h2>Quán Tưởng Về Thân Bất Tịnh (Asubha)</h2>
-        <p>Thân thể này của con vốn không được tạo nên từ vàng bạc, ngọc trai hay châu báu; cũng không được kết thành từ những hương liệu thơm tho như trầm hương.</p>
-        <p>Nó chỉ là sự hợp thành của tóc, lông, móng, răng,</p>
-        <p>cùng ba mươi hai thể trược <i>(phần bất tịnh)</i> — vốn cấu uế và thật chẳng đáng hưởng thụ.</p>
-        <p>Thân thể này là bất tịnh và vô cùng cấu uế.</p>
-        <p>Thân thể này là bất tịnh và vô cùng cấu uế.</p>
-        <p class="section-end">Thân thể này là bất tịnh và vô cùng cấu uế.</p>
+            <h2>Niệm Sự Chết (Maraṇānussati)</h2>
+            <p>Mạng sống của con là không chắc chắn; cái chết là điều chắc chắn.</p>
+            <p>Mạng sống của con là không chắc chắn; cái chết là điều chắc chắn.</p>
+            <p>Mạng sống của con là không chắc chắn; cái chết là điều chắc chắn.</p>
+        </section>
 
-        <h2>Niệm Sự Chết (Maraṇānussati)</h2>
-        <p>Mạng sống của con là không chắc chắn; cái chết là điều chắc chắn.</p>
-        <p>Mạng sống của con là không chắc chắn; cái chết là điều chắc chắn.</p>
-        <p>Mạng sống của con là không chắc chắn; cái chết là điều chắc chắn.</p>
-    </div>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yKCfGtP4tKA?si=ljlGAwSKEcpyiw8-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+        <section class="section">
+            <h2>Phiên Bản Slide Trình Chiếu</h2>
+            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+                 padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                 border-radius: 8px; will-change: transform;">
+              <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                src="https://www.canva.com/design/DAHISlpPkBE/i5z44t5xjf_FG8FXN4R0HQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+              </iframe>
+            </div>
+            <h2>Đại Đức Atulañāṇa Giảng Về Phận Sự Trước Khi Hành Thiền</h2>
+            <div>
+                <iframe style="width:100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/yKCfGtP4tKA?si=ljlGAwSKEcpyiw8-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        </article>
+    </main>
 </body>
 </html>
